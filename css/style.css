@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+a {
+    font-family: 'raleway';
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'raleway';
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*** Header con video ***/
+
+header {
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 200px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: #fff;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.home_header_info h1 {
+    font-size: 46px;
+    padding: 20px 0px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo-par h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.home_header_info p {
+    font-size: 17px;
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home_header_info a {
+    background-color: #fff;
+    color: #00a8b4;
+    text-decoration: none;
+    padding: 17px 45px;
+    margin-top: 25px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home_header_info a:hover {
+    color: #fff;
+}
+
+.home_header_info a:after {
+    content: "Read More";
+    background-color: #00a8b4;
+    width: 0%;
+    font-size: 15px;
+    height: 100%;
+    line-height: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    right: 0;
+}
+
+.home_header_info a:hover:after {
+    width: 100%;
+}
+
+.toggle-btn {
+    display: none;
+    color: #fff;
+}
+
+/*** Fin Header ***/
+
+/*** Hero Header ***/
+.hero-header-playas {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../images/playas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+/*** Hero Header ***/
+
+
+/*** cards categorias ***/
+.categoria-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.categoria-item img {
+    transition: .5s;
+}
+
+.categoria-item:hover img {
+    transform: scale(1.1);
+}
+
+/*** Carrusel ***/
+.section-padding {
+	padding: 100px 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+    padding-bottom: 13.25rem!important;
+}
+.carousel-caption h5 {
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+ 
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 20px;
+	line-height: 1.9;
+}
+
+.carousel-inner-principal:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.carruselimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*** Carrusel ***/
+
+/*** Categorias ***/
+.categorias img {
+    transition: .5s;
+}
+
+.categorias a:hover img {
+    transform: scale(1.1);
+}
+/*** Categorias ***/
+
+
+@media screen and (max-width:768px) {
+    /*** Header ***/
+    
+    .home_header_info h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .home_header_info p {
+        font-size: 14px;
+        line-height: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 0 40px;
+    }
+    
+    .explore-content-par {
+        flex-direction: column;
+    }
+
+    /*** Fin Header ***/
+
+    /*** Carrusel ***/
+    .carousel-caption {
+		bottom: 150px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+    /*** Carrusel ***/
+}
+
+@media screen and (max-width:950px) {}
+
+
